@@ -1,0 +1,56 @@
+/*footer*/
+.pub_footer{display:block; clear:both; width:980px; margin:0 auto; padding:10px 0 0; color:#333; font:normal 12px/24px Helvetica, Tahoma, Arial, sans-serif; text-align:center;}
+.pub_footer a:hover,
+.pub_footer a:active{color:#f00 !important; text-decoration:none !important;}
+.pub_footer dl{padding:0 0 3px; overflow:hidden; border-top:solid 1px #ccc;}
+.pub_footer dd a{color:#333;}
+.pub_footer dt {height:49px; padding:5px 0 10px; text-align:center;}
+.pub_footer dt a{padding:0; margin:0 5px;}
+.pub_footer dt a img{height:47px; /*width:115px; height:45px;*/ border:1px solid #ccc;}
+.pub_footer dd.backblue{padding:8px 0 5px; /*border-top:solid 1px #ccc; background:#96c3ea;*/ color:#666;}
+.pub_footer dd.backblue a{padding:0 10px; font-weight:normal; color:#333;}
+.pub_footer dd.backblue a:link, .pub_footer dd.backblue a:visited, .pub_footer dd.backblue a:hover, .pub_footer dd.backblue a:active{font-weight:normal; color:#333;}
+/* 增加客服联系方式 */
+.pub_footer .qq,
+.pub_footer .weibo,
+.pub_footer .online,
+.pub_footer .email,
+.pub_footer .phone{margin-right:15px;}
+.pub_footer .qq { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -111px; display: inline-block; padding-left: 17px; }
+.pub_footer .qq:hover { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -138px; display: inline-block; padding-left: 17px; }
+.pub_footer .weibo { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -14px -52px; display: inline-block; padding-left: 22px; }
+.pub_footer .weibo:hover { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -13px -81px; display: inline-block; padding-left: 22px; }
+.pub_footer .online { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -165px; display: inline-block; padding-left: 20px; }
+.pub_footer .online:hover { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -193px; display: inline-block; padding-left: 20px; }
+.pub_footer .email { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -220px; display: inline-block; padding-left: 20px; }
+.pub_footer .email:hover { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -248px; display: inline-block; padding-left: 20px; }
+.pub_footer .phone { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px 1px; display: inline-block; padding-left: 20px; }
+.pub_footer .phone:hover { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -27px; display: inline-block; padding-left: 20px; }
+/*pub_footer*/
+.pub_footer{display:block; clear:both; width:980px; margin:0 auto; padding:10px 0 0; color:#333; font:normal 12px/24px Helvetica, Tahoma, Arial, sans-serif; text-align:center;}
+.pub_footer a:hover,
+.pub_footer a:active{color:#f00 !important; text-decoration:none !important;}
+.pub_footer dl{padding:0 0 3px; overflow:hidden; border-top:solid 1px #ccc;}
+.pub_footer dd a{color:#333;}
+.pub_footer dt {height:49px; padding:5px 0 10px; text-align:center;}
+.pub_footer dt a{padding:0; margin:0 5px;}
+.pub_footer dt a img{height:47px; /*width:115px; height:45px;*/ border:1px solid #ccc;}
+.pub_footer dd.backblue{padding:8px 0 5px; /*border-top:solid 1px #ccc; background:#96c3ea;*/ color:#666;}
+.pub_footer dd.backblue a{padding:0 10px; font-weight:normal; color:#333;}
+.pub_footer dd.backblue a:link, .pub_footer dd.backblue a:visited, .pub_footer dd.backblue a:hover, .pub_footer dd.backblue a:active{font-weight:normal; color:#333;}
+/* 增加客服联系方式 */
+.pub_footer .qq,
+.pub_footer .weibo,
+.pub_footer .online,
+.pub_footer .email,
+.pub_footer .phone{margin-right:15px;}
+.pub_footer .qq { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -111px; display: inline-block; padding-left: 17px; }
+.pub_footer .qq:hover { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -138px; display: inline-block; padding-left: 17px; }
+.pub_footer .weibo { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -14px -52px; display: inline-block; padding-left: 22px; }
+.pub_footer .weibo:hover { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -13px -81px; display: inline-block; padding-left: 22px; }
+.pub_footer .online { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -165px; display: inline-block; padding-left: 20px; }
+.pub_footer .online:hover { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -193px; display: inline-block; padding-left: 20px; }
+.pub_footer .email { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -220px; display: inline-block; padding-left: 20px; }
+.pub_footer .email:hover { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -248px; display: inline-block; padding-left: 20px; }
+.pub_footer .phone { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px 1px; display: inline-block; padding-left: 20px; }
+.pub_footer .phone:hover { background: url( http://c.csdnimg.cn/www/images/pic_footer_icon.png ) no-repeat -17px -27px; display: inline-block; padding-left: 20px; }

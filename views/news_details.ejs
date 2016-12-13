@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>博客频道-SCDN.NET</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--buttons-->
+    <link href="css/buttons.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="js/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        body{
+            background: url("images/bg.jpg");
+        }
+        .daohang{
+            background: #454545;
+            border-radius: 5px;
+        }
+        .row .col-md-2{
+            margin-top: 15px;
+            padding-left: 30px;
+        }
+        .row .col-md-9{
+            margin-top: 15px;
+            border: 1px solid #fccccc;
+        }
+    </style>
+  </head>
+  <body>
+    <!--内容区域 start -->
+    <div class="container">
+        <img src="images/bg_top.jpg" class="img-responsive" alt="Responsive image">
+        <!--带下拉菜单的标签页 start-->
+        <div class="daohang">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Dropdown <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation" ><a href="#">Home</a></li>
+                        <li role="presentation"><a href="#">Profile</a></li>
+                        <li role="presentation"><a href="#">Messages</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--带下拉菜单的标签页 end-->
+        <!--栅格布局 start-->
+        <div class="row">
+            <!--左侧边栏 start-->
+            <div class="col-md-2">
+                <!---->
+                <div class="row">
+                    <div class="thumbnail">
+                    <img data-src="holder.js/300x300" alt="..." src="<%= article[0].uhead%>">
+                    <div class="caption">
+                        <h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <%= article[0].uname%></h5>
+                        <hr>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 访问：<%= article[0].adegree%>次</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 积分：934</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 等级： 10级</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 排名：千里之外</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 原创：87篇</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 转载：1篇</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 译文：0篇</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 评论：4条</p>
+                        <p>&nbsp&nbsp
+                            <a href="#" class="btn btn-primary" role="button">加关注</a> 
+                            <a href="#" class="btn btn-default" role="button">私信</a>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="thumbnail">
+                    <div class="caption">
+                        <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 文章分类</h4>
+                        <hr>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp Android Studio(13)</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Android(38)</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Java(18)</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Python(9)</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Ubuntu(3)</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 网络编程(0)</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 查询资料(2)</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 前端学习(4)</p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="thumbnail">
+                    <div class="caption">
+                        <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 文章存档</h4>
+                        <hr>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2016年12月(1)</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2016年10月(4)</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2016年08月(1)</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2016年07月(6)</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2016年06月(9)</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2016年05月(7)</p>
+                        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2016年03月(5)</p>
+                    </div>
+                    </div>
+                </div>
+                
+                <!---->
+            </div>
+            <!--左侧边栏 end-->
+            <div class="col-md-1"></div>
+            <!--右侧边栏 start-->
+            <div class="col-md-9">
+                <!--文章标题-->
+                <h4><%= article[0].antitle%></h4>
+                <hr/>
+                <P>
+    版权声明：本文为zhangrelay<%= article[0].afrom%>文章，有错请轻拍，转载请注明，谢谢...</p>
+
+                <!-- Single button start -->
+                <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    目录[+] <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">第一章 ROS系统入门</a></li>
+                    <li><a href="#">第二章 ROS系统架构及概念</a></li>
+                    <li><a href="#">第三章 可视化和调试工具</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">....</a></li>
+                </ul>
+                </div>
+                <!-- Single button end  -->
+                <!--文章详情-->
+                <xmp><%=article[0].acontent%></xmp>
+                <!--翻页按钮 start-->
+                <nav>
+                    <ul class="pager">
+                        <li><a href="#">上一篇</a></li>
+                        <li><a href="#">下一篇</a></li>
+                    </ul>
+                </nav>
+                <!--翻页按钮 end-->
+                <!--点赞按钮-->
+                 <button class="button button-glow button-circle button-action button-jumbo"><i class="fa fa-thumbs-up"></i></button>
+            </div>
+            <!--右侧边栏 end-->
+        </div>
+        <!--栅格布局 end-->
+    </div>
+    <!--内容区域 end-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  </html>
