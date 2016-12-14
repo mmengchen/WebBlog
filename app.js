@@ -4,12 +4,18 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var session = require('express-session');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
 
-var db = require('./routes/db');
+var db = require('./routes/admin/db');
+//网站后台路由
+var admin = require('./routes/admin/admin');
+var admin_users = require('./routes/admin/users');
+var admin_tag = require('./routes/admin/tag');
+var admin_article = require('./routes/admin/article');
+var admin_discuss = require('./routes/admin/discuss');
 
 var app = express();
 
@@ -24,18 +30,19 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({
+resave: true, // don't save session if unmodified
+saveUninitialized: false, // don't create session until something stored
+secret: 'love'
+}));
 
 app.use('/', index);
 app.use('/users', users);
-
-
-
-// //路由配置
-// // app.get("/admin/login",db.login);
-// app.get("/admin/login",function(req,res){
-//     res.send("会员登陆系统");
-// });
-
+app.use('/admin', admin);
+app.use('/admin/users', admin_users);
+app.use('/admin/tag', admin_tag);
+app.use('/admin/article', admin_article);
+app.use('/admin/discuss',admin_discuss)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
