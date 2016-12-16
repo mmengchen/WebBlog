@@ -13,7 +13,6 @@ var db = require('./db');
 // });
 router.get('/', function (req, res) {
     //res.render('admin/index', { users: req.session.user });
-	res.render('admin/login');
 });
 
 

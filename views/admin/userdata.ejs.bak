@@ -280,6 +280,48 @@
            immediately after the control sidebar -->
       <div class='control-sidebar-bg'></div>
     </div><!-- ./wrapper -->
+    <script>
+    //执行Ajax加载
+            function doLoad(){
+               //使用jQuery的ajax来实现请求
+                $.ajax({
+                    url:"/admin/users/", //请求地址
+                    type:'get',   //发送方式：Get和post
+                    async:true,  //异步的
+                    dataType:"json", //Ajax响应回来的数据类型
+                    success:function(data){ //成功的回调函数
+                        for(var i=0;i<data.length;i++){
+                            var str  = "<li onclick='del("+i+")'>"+data[i].name+":"+data[i].sex+":"+data[i].age+"</li>";
+                            $(str).appendTo("#uid");
+                        }
+                    },
+                    error:function(){
+                        alert('Ajax加载处理失败！'); //失败的回调函数
+                    }
+                });
+            }
+    function del(uid){
+                //使用jQuery的ajax来实现请求
+                if(confirm("确定要删除吗？"))
+                $.ajax({
+                    url:"/admin/users/delUser", //请求地址
+                    type:'get',   //发送方式：Get和post
+                    async:true,  //异步的
+                    dataType:"text", //Ajax响应回来的数据类型
+                    data:"uid="+uid,
+                    success:function(data){ //成功的回调函数
+                       if(data=="Y"){
+                            //$("#uid").empty();
+                             //doLoad(); //数据重载
+                             alert('Ajax加载处理成功！'); //失败的回调函数
+                       }
+                    },
+                    error:function(){
+                        alert('Ajax加载处理失败！'); //失败的回调函数
+                    }
+                });
+            };
+        </script>
     <!-- jQuery 2.1.4 -->
     <script src="../../plugins/jQuery/jQuery-2.1.4.min.js"></script>
     <!-- Bootstrap 3.3.2 JS -->
